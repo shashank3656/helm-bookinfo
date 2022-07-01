@@ -16,13 +16,13 @@ spec:
       uri: /productpage
   - match:
     - uri:
-        exact: - {{ .Values.gateway.uri }}
+        exact: /- {{ .Values.gateway.uri }}
     - uri:
-        prefix: - {{ .Values.gateway.uri1 }}
+        prefix: /- {{ .Values.gateway.uri1 }}
     - uri:
-        exact: - {{ .Values.gateway.uri2 }}
+        exact: /- {{ .Values.gateway.uri2 }}
     - uri:
-        exact: - {{ .Values.gateway.uri3 }}
+        exact: /- {{ .Values.gateway.uri3 }}
     - uri:
         prefix: /api/v1/products
     route:
