@@ -4,7 +4,7 @@
 
 gateway:
   selector: ingressgateway
-  hostname: 34.131.166.137  
+  hostname: example.com
   uri: /productpage  
 
   httpsRedirect: false
