@@ -5,7 +5,7 @@
 gateway:
   selector: ingressgateway
   hostname: example.com
-  uri:      /productpage
+  uri:      productpage
 
   httpsRedirect: false
 
