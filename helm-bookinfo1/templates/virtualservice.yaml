@@ -13,16 +13,16 @@ spec:
     - uri:
         exact: /
     redirect:
-      uri: - {{ .Values.gateway.uri }}
+      uri: /productpage
   - match:
     - uri:
-        exact: /productpage
+        exact: - {{ .Values.gateway.uri }}
     - uri:
-        prefix: /static
+        prefix: - {{ .Values.gateway.uri1 }}
     - uri:
-        exact: /login
+        exact: - {{ .Values.gateway.uri2 }}
     - uri:
-        exact: /logout
+        exact: - {{ .Values.gateway.uri3 }}
     - uri:
         prefix: /api/v1/products
     route:
