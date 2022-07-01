@@ -14,7 +14,7 @@ spec:
         exact: /
     redirect:
       uri: 
-      - {{ .Values.gateway.url }}
+      - {{ .Values.gateway.uri }
   - match:
     - uri:
         exact: /productpage
