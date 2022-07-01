@@ -5,10 +5,10 @@
 gateway:
   selector: ingressgateway
   hostname: example.com
-  uri: /productpage
-  uri1: /static
-  uri2: /login
-  uri3: /logout
+  uri: productpage
+  uri1: static
+  uri2: login
+  uri3: logout
 
   httpsRedirect: false
 
